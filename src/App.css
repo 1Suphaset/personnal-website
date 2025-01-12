@@ -1,38 +1,130 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ให้ container สูงอย่างน้อยเท่ากับความสูงหน้าจอ */
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Noto Sans Thai', sans-serif;
+  background-color: #0d0d2e; /* สีดำกาแล็กซี่ */
+  color: #fff;
+  overflow-x: hidden;
+}
+.pt-1{
+  padding-top: 1rem;
+}
+.pt-2{
+  padding-top: 2rem;
+}
+.pt-3{
+  padding-top: 3rem;
+}
+.pt-4{
+  padding-top: 4rem;
+}
+.c-primary{
+  color: #6a0dad;
+}
+.c-sec{
+  color: #ffffff;
+}
+.mr-2{
+  margin-right: 1rem;
+}
+.home-container {
+  position: relative;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+.bloom-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* อยู่ข้างหลังเนื้อหา */
+  background: radial-gradient(circle at center, rgba(111, 0, 128, 0.5), rgba(0, 0, 0, 0.8));
+}
+.home-footer {
+  margin-bottom: 20px;
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+.stars {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite ease-in-out;
+}
+.day-box{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 2px;
+}
+.home-subtitle::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 5px;
+  animation: blink 1.5s steps(2, start) infinite;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@keyframes blink {
   to {
-    transform: rotate(360deg);
+    visibility: hidden;
   }
 }
+/* อนิเมชันสำหรับดวงดาว */
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+/* สำหรับ Scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* ความกว้างของ scrollbar */
+  height: 8px; /* ความสูงของ scrollbar */
+}
+
+/* สำหรับพื้นหลังของ scrollbar */
+::-webkit-scrollbar-track {
+  background: #1d0131; /* สีม่วงเข้ม */
+  border-radius: 10px; /* เพิ่มความมนถ้าต้องการ */
+}
+
+/* สำหรับตัว scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #3d0c9d; /* สีม่วงอ่อน */
+  border-radius: 10px; /* เพิ่มความมน */
+}
+
+/* เพิ่ม hover effect ให้ scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: #b19cd9; /* สีม่วงอ่อนขึ้น */
+}
+

@@ -1,0 +1,25 @@
+.cinzel-header {
+  font-family: "Cinzel", serif;
+  /* font-optical-sizing: auto; */
+  font-weight: 900;
+  font-style: normal;
+  color: #6a0dad;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    height: auto; 
+    /* background-color: #500982; */
+    gap: 5rem;
+    padding: 0 7rem 0 7rem;
+    margin-top: 6rem;
+    top: 0;
+    align-items: center;
+    justify-items: start;
+  }
+
+  .project-header {
+    margin-top: 50px;
+    text-align: center;
+  }

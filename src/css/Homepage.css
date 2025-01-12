@@ -1,0 +1,112 @@
+
+  .top{
+    display: flex;
+    height: calc(100vh - 3rem); 
+    /* background-color: #c0c0ff; */
+    padding: 0 7rem 0 7rem;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .profile-img {
+    width: 40rem; /* กำหนดความกว้าง */
+    height: auto; /* รักษาอัตราส่วนของรูปภาพ */
+    object-fit: cover; /* เลือกการครอบรูป */
+    overflow: hidden; 
+    /* mix-blend-mode: multiply; */
+  }
+  .home-header {
+    margin-top: 50px;
+    text-align: start;
+  }
+  
+  .home-title {
+    font-size: 3rem;
+    text-shadow: 0px 0px 10px rgba(138, 43, 226, 0.7);
+  }
+  
+  
+  .home-subtitle {
+    font-size: 2rem;
+    color:  rgba(138, 43, 226, 0.7);
+    /* color: #c0c0ff; */
+  }
+  .fs-4 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #ffffff;
+    /* color: #c0c0ff; */
+  }
+  .fs-5 {
+    font-size: 4rem;
+    color: #ffffff;
+    /* color: #c0c0ff; */
+  }
+  .intro{
+    display: flex;
+    height: 100vh; 
+    /* background-color: #c0c0ff; */
+    gap: 5rem;
+    padding: 0 7rem 0 7rem;
+    margin-top: 3rem;
+    align-items: start;
+    justify-content: space-between;
+
+  }
+  .profile-img2 {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 6rem;
+  }
+  .home-header2 {
+    text-align: start;
+  }
+  .s-main{
+    font-size: 3rem;
+    line-height: 3rem;
+    height: 3rem;
+  }
+  .s-sec{
+    font-size: 2rem;
+  }
+  .s-thr{
+    font-size: 1rem;
+  }
+  .home-subtitle2 {
+    color: #ffffff;
+    /* color: #c0c0ff; */
+  }
+  /* .about-section {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  } */
+  
+  .about-section h2 {
+    font-size: 2rem;
+    color: #d8b4fe;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #dcdce0;
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 8rem;
+  }
+  .works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 7rem 0 7rem;
+  }
+  

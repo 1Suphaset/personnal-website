@@ -1,0 +1,87 @@
+/* พื้นฐานสำหรับ Navbar */
+      
+.nav-box{
+  height: 3rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.navbar {
+    
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    background: transparent; /* พื้นหลังโปร่งใส */
+  }
+  
+  .navbar.sticky {
+    background: rgba(48, 15, 84, 0.205); /* พื้นหลังสีดำแบบโปร่งใส */
+    backdrop-filter: blur(10px); /* เอฟเฟกต์เบลอ */
+  }
+  
+  /* สไตล์สำหรับโลโก้ */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 0 0 0 7rem;
+  }
+  
+  /* เมนู */
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 26px;
+    margin: 0;
+    padding: 0 7rem 0 0;
+  }
+  
+  .navbar-menu li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  /* กำหนดสไตล์พื้นฐานให้กับข้อความ */
+.hover-underline-animation {
+    display: inline-block; /* ทำให้ข้อความเป็นบล็อกอินไลน์เพื่อให้สามารถใช้ Pseudo-element ได้ */
+    position: relative;    /* กำหนดตำแหน่งของ Pseudo-element */
+    color: white;          /* กำหนดสีของข้อความ */
+    text-decoration: none; /* ปิดการใช้งานเส้นขีดใต้เริ่มต้น */
+  }
+  
+  /* สไตล์ของเส้นขีดใต้ที่ใช้ Pseudo-element */
+  .hover-underline-animation::after {
+    content: '';           /* เนื้อหาว่างสำหรับ Pseudo-element */
+    position: absolute;    /* กำหนดตำแหน่งแบบสัมพัทธ์ */
+    width: 100%;           /* ความกว้างเท่ากับความกว้างของข้อความ */
+    height: 3px;           /* ความสูงของเส้นขีดใต้ */
+    bottom: 0;             /* วางเส้นขีดใต้ที่ด้านล่างของข้อความ */
+    left: 0;               /* วางเส้นขีดใต้ที่ด้านซ้ายของข้อความ */
+    background-color: rgb(111, 0, 128); /* กำหนดสีของเส้นขีดใต้ */
+    transform: scaleX(0);  /* เริ่มต้นด้วยการย่อขนาดเส้นขีดใต้ */
+    transform-origin: bottom right; /* กำหนดจุดเริ่มต้นของการขยายเป็นมุมขวาล่าง */
+    transition: transform 0.3s ease; /* กำหนดการเปลี่ยนแปลงของ transform */
+  }
+  
+  /* เมื่อโฮเวอร์บนข้อความ */
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);  /* ขยายเส้นขีดใต้ให้เต็มความกว้าง */
+    transform-origin: bottom left; /* เปลี่ยนจุดเริ่มต้นของการขยายเป็นมุมซ้ายล่าง */
+  }
+  
+  
