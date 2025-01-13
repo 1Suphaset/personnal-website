@@ -68,7 +68,7 @@ function Project() {
               imageUrl={W5}
               title="SAM'TECH FESTIVAL & OPEN HOUSE"
               description="เข้าร่วมงาน SAM'TECH FESTIVAL & OPEN HOUSE ผ่านบูธ Rcheewaonline ที่มีกิจกรรมเล่นเกมแจกของรางวัลให้แก่น้องๆ นักเรียนที่มาร่วมงาน "
-              buttonText="See More >>"
+              buttonText="See More"
               onButtonClick={() => goToProjectDetail(5)} // ส่งฟังก์ชันเข้ามา
               tags={['อื่นๆ']}
             />
