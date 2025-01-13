@@ -6,7 +6,7 @@
     padding: 0 7rem 0 7rem;
     align-items: center;
     justify-content: space-between;
-
+    margin-bottom: 3rem;
   }
   .profile-img {
     width: 40rem; /* กำหนดความกว้าง */
@@ -35,7 +35,7 @@
     font-size: 3rem;
     font-weight: 400;
     color: #ffffff;
-    /* color: #c0c0ff; */
+    /* color: #d1d1e5; */
   }
   .fs-5 {
     font-size: 4rem;
@@ -45,7 +45,7 @@
   .intro{
     display: flex;
     height: 100vh; 
-    /* background-color: #c0c0ff; */
+    /* background-color: #000000; */
     gap: 5rem;
     padding: 0 7rem 0 7rem;
     margin-top: 3rem;
@@ -54,9 +54,27 @@
 
   }
   .profile-img2 {
-    width: 15rem;
-    height: 15rem;
+    width: 60rem;
+    height: 18rem;
     margin-top: 6rem;
+    border-radius: 35%;
+    /* object-fit: cover;/ */
+    overflow: hidden;
+  }
+  .profile-img3 {
+    width: 45rem;
+    height: 18rem;
+    margin-top: 6rem;
+    border-radius: 35%;
+    /* object-fit: cover;/ */
+    overflow: hidden;
+  }
+
+  .list{
+    list-style-type: disc; /* จุดข้างหน้า */
+  padding-left: 5rem; /* ระยะห่างจากขอบ */
+ 
+  line-height: 1.6; 
   }
   .home-header2 {
     text-align: start;

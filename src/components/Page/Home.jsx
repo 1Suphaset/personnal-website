@@ -22,7 +22,7 @@ import lineIcon from "../../images/line (1).png"
 import PersonImage from "../../images/1000002647.png"
 import PersonImage2 from "../../images/Screenshot_20240620_225958_Gallery.jpg"
 const TypingEffect = () => {
-  const words = ["Front-end developer", "UI/UX Designer", "React Enthusiast"]; // คำที่ต้องการเปลี่ยน
+  const words = ["Front-end developer", "UI/UX Designer"]; // คำที่ต้องการเปลี่ยน
   const typingSpeed = 200; // ความเร็วในการพิมพ์
   const deletingSpeed = 150; // ความเร็วในการลบ
   const pauseAfterTyping = 2000; // เวลาพักหลังพิมพ์เสร็จ
@@ -130,9 +130,9 @@ function Home() {
         </p> */}
         <header className="home-header">
           <p className="home-subtitle2 s-main">LET ME INTRODUCE MYSELF</p><br /><br />
-          <p className="home-subtitle2 s-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus est temporibus reiciendis reprehenderit! Quo est, totam ab doloremque nulla quam non tenetur officia, deleniti aliquid explicabo error! Eum, ipsum.</p>
-          <p className="home-subtitle2 s-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus est temporibus reiciendis reprehenderit! Quo est, totam ab doloremque nulla quam non tenetur officia, deleniti aliquid explicabo error! Eum, ipsum.</p>
-          <p className="home-subtitle2 s-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus est temporibus reiciendis reprehenderit! Quo est, totam ab doloremque nulla quam non tenetur officia, deleniti aliquid explicabo error! Eum, ipsum.</p>
+          <p className="home-subtitle2 s-sec">สวัสดีครับ ผมเป็นนักศึกษาฝึกงานในตำแหน่ง Front-end Developer ซึ่งมีความเชี่ยวชาญในการพัฒนาเว็บไซต์และแอปพลิเคชัน โดยใช้เครื่องมือและเทคโนโลยีต่างๆ เช่น HTML, CSS, JavaScript, และ React รวมถึงการใช้เฟรมเวิร์กต่างๆ เช่น Bootstrap และ Material-UI เพื่อสร้าง UI ที่ใช้งานง่ายและมีประสิทธิภาพ</p>
+          <p className="home-subtitle2 s-sec">นอกจากนี้ผมยังมีทักษะในการออกแบบ UX/UI โดยใช้เครื่องมือ Figma รวมถึงการทดสอบระบบด้วยเพื่อให้มั่นใจว่าโค้ดและฟีเจอร์ต่างๆ ทำงานได้อย่างถูกต้อง</p>
+          <p className="home-subtitle2 s-sec">ผมตื่นเต้นที่จะได้เรียนรู้และพัฒนาทักษะในสายงานนี้ พร้อมที่จะมีส่วนร่วมในโปรเจกต์ต่างๆ และเสริมสร้างประสบการณ์ที่มีคุณค่าในการฝึกงานครับ</p>
         </header>
         <img src={PersonImage2} className='profile-img2' />
       </section>

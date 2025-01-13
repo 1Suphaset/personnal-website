@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectDetail from "../component/Project-detail"
 import ProjectHead from '../component/ProjectHead'
 import ProjectSub from '../component/ProjectSub'
+import ProjectGall from '../component/projectGall'
 
 
 function Test() {
@@ -21,6 +22,7 @@ function Test() {
       </div>
       <ProjectSub />
       <ProjectDetail />
+      <ProjectGall />
     </div>
   )
 }

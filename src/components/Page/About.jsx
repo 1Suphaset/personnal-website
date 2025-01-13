@@ -11,7 +11,7 @@ import Hand from '../component/WavingHand';
 import { Margin } from '@mui/icons-material';
 import Calendar from '../component/work';
 import Sheet from '../component/Sheet';
-
+import PersonImage2 from "../../images/Screenshot_20240620_225958_Gallery.jpg"
 
 function About() {
   const [holidays, setHolidays] = useState([]);
@@ -98,27 +98,36 @@ function About() {
       <section className="top">
         <header className="home-header">
           <p className="home-subtitle2 s-main">Know Who I'm</p><br /><br />
-          <p className="home-subtitle2 s-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus est temporibus reiciendis reprehenderit! Quo est, totam ab doloremque nulla quam non tenetur officia, deleniti aliquid explicabo error! Eum, ipsum.</p>
-          <p className="home-subtitle2 s-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus est temporibus reiciendis reprehenderit! Quo est, totam ab doloremque nulla quam non tenetur officia, deleniti aliquid explicabo error! Eum, ipsum.</p>
+          <p className="home-subtitle2 s-sec">
+  สวัสดีครับ ผมชื่อ <span className='c-primary'>ศุภเศรษฐ์ โมธรรม</span> กำลังศึกษาอยู่ที่ 
+  <span className='c-primary'>มหาวิทยาลัยนอร์ทกรุงเทพ</span> ปัจจุบันฝึกงานอยู่ที่บริษัท 
+  <span className='c-primary'>G-Gratitude</span> ในตำแหน่ง Front-end Developer ซึ่งหน้าที่หลักของผมคือการพัฒนาโค้ดและฟีเจอร์ของระบบ
+</p>
+          <p className="home-subtitle2 s-sec">รู้สึกตื่นเต้นและยินดีที่ได้เรียนรู้ทักษะหลากหลายในสายงานนี้เพื่อเตรียมพร้อมสำหรับการทำงานในอนาคตครับ </p>
+          <p className="home-subtitle2 s-sec">นอกจากนี้ยังมีโอกาสได้ทำงานด้าน</p>
+          <ul className="list">
+            <li className="home-subtitle2 s-sec">การออกแบบ UX/UI</li>
+            <li className="home-subtitle2 s-sec">Testing ระบบเพื่อความเสถียรและประสิทธิภาพ</li>
+          </ul>
         </header>
-        <img src="https://via.placeholder.com/150/cccccc/808080?text=No+Image" className='profile-img' />
+        <img src={PersonImage2} className='profile-img3' />
       </section>
       <div style={{ width: '100%' }} className="works">
         <p className="home-subtitle2 s-main">Day I Work</p>
         <Calendar startYear={2024} startMonth={10} endYear={2025} endMonth={8} holidays={holidays} taskMap={taskMap} />
         <div style={{ display: 'flex', alignItems: "center", gap: "5px", justifyContent: "end", width: "100%", marginTop: ".5rem" }}>
-        <p>Less</p>
-        <div className='day-box' style={{ backgroundColor: "#ffffff" }}></div>
-        <div className='day-box' style={{ backgroundColor: "#aa7dff" }}></div>
-        <div className='day-box' style={{ backgroundColor: "#7a48d9" }}></div>
-        <div className='day-box' style={{ backgroundColor: "#5c2cb8" }}></div>
-        <div className='day-box' style={{ backgroundColor: "#331078" }}></div>
-        <div className='day-box' style={{ backgroundColor: "#280a63" }}></div>
-        <div className='day-box' style={{ backgroundColor: "#200459" }}></div>
-        <p>More</p>
+          <p>Less</p>
+          <div className='day-box' style={{ backgroundColor: "#ffffff" }}></div>
+          <div className='day-box' style={{ backgroundColor: "#aa7dff" }}></div>
+          <div className='day-box' style={{ backgroundColor: "#7a48d9" }}></div>
+          <div className='day-box' style={{ backgroundColor: "#5c2cb8" }}></div>
+          <div className='day-box' style={{ backgroundColor: "#331078" }}></div>
+          <div className='day-box' style={{ backgroundColor: "#280a63" }}></div>
+          <div className='day-box' style={{ backgroundColor: "#200459" }}></div>
+          <p>More</p>
+        </div>
       </div>
-      </div>
-      
+
     </>
   );
 }

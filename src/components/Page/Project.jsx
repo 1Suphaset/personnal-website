@@ -19,8 +19,7 @@ function Project() {
             <span>My Recent </span>
             <h1 className="cinzel-header" style={{ marginLeft: '10px' }}> Works</h1>
           </div><br />
-          <p className="home-subtitle2 s-thr">Here are a few projects i've worked on recently.</p>
-
+          <p className="home-subtitle2 s-thr" style={{  textAlign: 'center'}}>Here are a few projects i've worked on recently.</p>
           <br /><br />
           <div style={{
             display: 'flex',
@@ -34,40 +33,40 @@ function Project() {
             <CardComponent
               imageUrl={W1}
               title="EN-TECH [For Student]"
-              description="This is the description for the first card. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              buttonText="Learn More"
+              description="พัฒนาระบบ EN_TECH สำหรับวิทยาลัยเทคโนโลยีวิศวกรรมแหลมฉบัง เพื่อสร้างแพลตฟอร์มที่ใช้งานง่าย และตอบโจทย์ความต้องการของนักศึกษาและบุคลากร โดยการพัฒนาให้ระบบสามารถรองรับฟังก์ชันที่หลากหลาย เพื่อสนับสนุนการใช้งานของผู้ใช้"
+              buttonText="See More"
               onButtonClick={handleClick} // ส่งฟังก์ชันเข้ามา
               tags={['Front-end']}
             />
             <CardComponent
               imageUrl={W2}
               title="EN-TECH [For Admin]"
-              description="This is the description for the first card. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              buttonText="Learn More"
+             description="พัฒนาระบบ EN_TECH สำหรับวิทยาลัยเทคโนโลยีวิศวกรรมแหลมฉบัง เพื่อสร้างแพลตฟอร์มที่ใช้งานง่าย และตอบโจทย์ความต้องการของนักศึกษาและบุคลากร โดยการพัฒนาให้ระบบสามารถรองรับฟังก์ชันที่หลากหลาย เพื่อสนับสนุนการใช้งานของผู้ใช้"
+              buttonText="See More"
               onButtonClick={handleClick} // ส่งฟังก์ชันเข้ามา
               tags={['Front-end']}
             />
             <CardComponent
               imageUrl={W3}
               title="6 GHz Wi-Fi and the future"
-              description="This is the description for the first card. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              buttonText="Learn More"
-              onButtonClick={handleClick} // ส่งฟังก์ชันเข้ามา
+              description="เข้าร่วมงานและออกแบบป้าย RollUp สำหรับบริษัท G-Gratitude และ Powtoon เพื่อแสดงโซลูชันที่เราใช้แก้ปัญหาอย่างมีประสิทธิภาพ พร้อมกิจกรรมแจกของรางวัลให้ผู้เยี่ยมชมบูธ เพื่อสร้างความประทับใจและดึงดูดความสนใจภายในงาน"
+              buttonText="See More"
+              onButtonClick={handleClick} // ส่งฟังก์ชัเข้าร่วมงานและนเข้ามา
               tags={['Design','อื่นๆ']}
             />
             <CardComponent
               imageUrl={W4}
               title="GSB WISDOM"
-              description="This is the description for the first card. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              buttonText="Learn More"
+              description="เขียนเสนอข้อเสนอแนะและ ReDesign UX/UI สำหรับระบบบริหารจัดการความรู้ GSB WISDOM เพื่อเพิ่มประสิทธิภาพการใช้งาน ตอบโจทย์ความต้องการของผู้ใช้งาน และยกระดับประสบการณ์ในการเข้าถึงข้อมูลและจัดการความรู้ให้สะดวก รวดเร็ว และทันสมัยมากยิ่งขึ้น"
+              buttonText="See More"
               onButtonClick={handleClick} // ส่งฟังก์ชันเข้ามา
               tags={['UX/UI']}
             />
             <CardComponent
               imageUrl={W5}
-              title="Sam"
-              description="This is the description for the first card. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              buttonText="Learn More >>"
+              title="SAM'TECH FESTIVAL & OPEN HOUSE"
+              description="เข้าร่วมงาน SAM'TECH FESTIVAL & OPEN HOUSE ผ่านบูธ Rcheewaonline ที่มีกิจกรรมเล่นเกมแจกของรางวัลให้แก่น้องๆ นักเรียนที่มาร่วมงาน "
+              buttonText="See More >>"
               onButtonClick={handleClick} // ส่งฟังก์ชันเข้ามา
               tags={['อื่นๆ']}
             />
