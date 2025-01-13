@@ -43,7 +43,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Project />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Test/>} />
+          <Route path="/project/:projectId"  element={<Test/>} />
         </Routes>
         <footer className="home-footer">
         <p>© 2025 Suphaset Motham. </p>

@@ -3,6 +3,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { Box, Typography } from '@mui/material';
 
+
 function srcset(image, size, rows = 1, cols = 1) {
     return {
         src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
@@ -10,7 +11,7 @@ function srcset(image, size, rows = 1, cols = 1) {
     };
 }
 
-export default function ProjectGall() {
+export default function ProjectGall({ images }) {
     return (
         <div style={{ padding: '0 7rem' }}>
             <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#000000', backgroundColor: '#d1d1e5', padding: '1rem 2rem' }}>
@@ -27,13 +28,13 @@ export default function ProjectGall() {
                 cols={4}
                 rowHeight={121}
             >
-                {itemData.map((item) => (
-                    <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+                {images.slice(0, 6).map((item, index) => (
+                    <ImageListItem key={index} cols={item.cols || 1} rows={item.rows || 1}>
                         <img
                             {...srcset(item.img, 121, item.rows, item.cols)}
                             alt={item.title}
                             loading="lazy"
-                            style={{ borderRadius: '12px' }} // เพิ่ม border-radius ที่นี่
+                            style={{ borderRadius: '12px' }}
                         />
                     </ImageListItem>
                 ))}
